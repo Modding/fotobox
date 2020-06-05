@@ -14,7 +14,7 @@ if (isset($_POST['user']))
 $login = FALSE;
     if ($_POST['user'] === $user['username']){
     $pwhash = hashmypw($_POST['pw'], $user['salt']);
-    die($pwhash);
+    //die($pwhash);
         if ($pwhash === $user['passwd']){
             die('lul2');
             $login = TRUE;
