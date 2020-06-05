@@ -1,6 +1,6 @@
 <?php
 
-include_once "config.php";
+include "config.php";
 
 function hashmypw($pw, $salt){
     $hash = hash(sha512, $pw. $salt);
