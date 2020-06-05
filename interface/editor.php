@@ -15,7 +15,7 @@ $file = $_GET['file'];
     }
 // configuration
 $url = '/editor.php?file=' . $file;
-$edit = '/path/to/txt/file';
+//$edit = '/path/to/txt/file';
 
 // check if form has been submitted
 if (isset($_POST['text']))
