@@ -14,7 +14,7 @@ $file = $_GET['file'];
             die('No file given');
     }
 // configuration
-$url = '/edit.php?file=' . $file;
+$url = '/editor.php?file=' . $file;
 $edit = '/path/to/txt/file';
 
 // check if form has been submitted
