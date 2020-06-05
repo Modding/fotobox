@@ -13,6 +13,7 @@ if (isset($_POST['user']))
 //    die($_POST['user'] . $_POST['pw']);
 $login = FALSE;
     if ($_POST['user'] === $user['username']){
+        die('lul');
         if (hashmypw($_POST['pw'], $user['salt']) === $user['passwd']){
             $login = TRUE;
         }
