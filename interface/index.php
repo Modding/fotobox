@@ -36,7 +36,7 @@ session_destroy();
 <body>
 <form action="" method="post">
     <input name="user" type="text"><br>
-    <input name="pw" type="password>"><br>
+    <input name="pw" type="password"><br>
 <input type="submit" />
 </form>
 </body>
