@@ -7,4 +7,37 @@ function hashmypw($pw, $salt){
     return $hash;
 }
 
-echo hashmypw($_GET['pw'], $user['salt']);
+
+if (isset($_POST['user']))
+{
+$login = FALSE;
+    if ($_POST['user'] == $user['username']){
+        if (hashmypw($_POST['pw'], $user['salt']) == $user['passwd']){
+            $login = TRUE;
+        }
+    }
+
+    if ($login == TRUE){
+        session_start();
+        $_SESSION["user"] = $_POST['user'];
+        die ('<script type="text/javascript">
+                setTimeout("self.location.href=\'/interface.php\'", 3);
+                </script>');
+    }else{
+        die ('<script type="text/javascript">
+                setTimeout("self.location.href=\'/index.php\'", 3);
+                </script>');
+    }
+}
+session_start();
+session_destroy();
+?>
+<html>
+<body>
+<form action="" method="post">
+    <input name="user" type="text"><br>
+    <input name="pw" type="password>"><br>
+<input type="submit" />
+</form>
+</body>
+</html>
