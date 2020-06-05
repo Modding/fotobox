@@ -1,5 +1,6 @@
 <?php
 //Default Configuration
+include "session.php";
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"calc_folder":false}';
 
 /**
