@@ -1,7 +1,11 @@
 fotoboxCfg = {}
 
-fotoboxCfg['window-width']    = 1280
-fotoboxCfg['window-height']   = 1024
+#fotoboxCfg['window-width']    = 1280
+#fotoboxCfg['window-height']   = 1024
+fotoboxCfg['window-width']    = 1680
+fotoboxCfg['window-height']   = 1050
+
+
 
 # Depending on the camera used previews might got smaller than set here
 fotoboxCfg['cam-p-width']     = 960
@@ -10,15 +14,20 @@ fotoboxCfg['cam-p-x']         = 9
 fotoboxCfg['cam-p-y']         = 261
 fotoboxCfg['cam-p-hflip']     = True # False = Like a camera, True = Like a mirror
 
-# PiCam v1: 2592x1944, v2: 3280x2464
-fotoboxCfg['cam-c-width']     = 3280
-fotoboxCfg['cam-c-height']    = 2464
+# PiCam v1: 2592x1944, v2: 3280x2464 HQ: 4056x3040
+fotoboxCfg['cam-c-width']     = 4056
+fotoboxCfg['cam-c-height']    = 3040
+
 fotoboxCfg['cam-c-hflip']     = False # False = Like a camera, True = Like a mirror
 
 fotoboxCfg['nopi']            = False #True = Skip rasperry specific modules
 
-fotoboxCfg['temp']            = '/tmp/fotobox/'
-fotoboxCfg['save']            = '/home/pi/fotobox/images/'
+
+fotoboxCfg['temp']            = '/media/usb0/tmp/'
+#fotoboxCfg['temp']            = '/tmp/fotobox/'
+fotoboxCfg['save']            = '/media/usb0/fotos/'
+#fotoboxCfg['save']            = '/home/pi/fotobox/images/'
+
 
 fotoboxCfg['countdown']       = 3 # Seconds
 
