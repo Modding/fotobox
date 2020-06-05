@@ -10,6 +10,9 @@ $file = $_GET['file'];
         case 2:
             $edit = "../design/template.html";
             break;
+        case 3:
+            $edit = "../fotobox.py";
+            break;
         default:
             die('No file given');
     }
