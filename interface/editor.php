@@ -36,11 +36,12 @@ if (isset($_POST['text']))
 $text = file_get_contents($edit);
 
 ?>
-<!-- HTML form -->
-<form action="" method="post">
-    <textarea name="text"><?php echo htmlspecialchars($text) ?></textarea>
-    <input type="submit" />
-    <input type="reset" />
-</form>
+<html>
+    <body>
+        <form action="" method="post">
+            <textarea name="text" style="width: 80%; height: 80%; align-self: center"><?php echo htmlspecialchars($text) ?></textarea><br>
+            <input type="submit" />
+            <input type="reset" />
+        </form>
 
 
