@@ -17,5 +17,6 @@ include "session.php";
         <h2>Admin Tasks:</h2><br>
             <a href="update.php" target="_blank">Git update</a><br>
             <a href="reboot.php" target="_blank">Reboot Fotobox</a><br>
+            <a href="poweroff.php" target="_blank">Power Off Fotobox</a><br>
     </body>
 </html>
