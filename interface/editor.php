@@ -13,6 +13,9 @@ $file = $_GET['file'];
         case 3:
             $edit = "../fotobox.py";
             break;
+        case 4:
+            $edit = "../../sync.sh";
+            break;
         default:
             die('No file given');
     }
