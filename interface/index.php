@@ -10,13 +10,13 @@ function hashmypw($pw, $salt){
 
 if (isset($_POST['user']))
 {
-//    die($_POST['user'] . $_POST['pw']);
+
 $login = FALSE;
     if ($_POST['user'] === $user['username']){
     $pwhash = hashmypw($_POST['pw'], $user['salt']);
-    //die($pwhash);
+
         if ($pwhash === $user['passwd']){
-            //die('lul2');
+
             $login = TRUE;
         }
     }
