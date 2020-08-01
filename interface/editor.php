@@ -21,7 +21,6 @@ $file = $_GET['file'];
     }
 // configuration
 $url = '/editor.php?file=' . $file;
-//$edit = '/path/to/txt/file';
 
 // check if form has been submitted
 if (isset($_POST['text']))
@@ -46,5 +45,6 @@ $text = file_get_contents($edit);
             <input type="submit" />
             <input type="reset" />
         </form>
-
+    </body>
+</html>
 
