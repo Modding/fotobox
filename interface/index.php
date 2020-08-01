@@ -37,6 +37,9 @@ session_start();
 session_destroy();
 ?>
 <html>
+<head>
+    <title>Fotobox Administration</title>
+</head>
 <body>
 <form action="" method="post">
     <input name="user" type="text"><br>
